@@ -16,4 +16,9 @@ if (Test-Path $nppAliasPath) {
 } #end of if
 
 #Modules
-Import-Module PSReadLine 
+Import-Module PSReadLine
+
+# Posh Git
+# Load posh-git example profile
+. (Resolve-Path "$env:LOCALAPPDATA\GitHub\shell.ps1")
+. (Resolve-Path "$env:github_posh_git\profile.example.ps1")
