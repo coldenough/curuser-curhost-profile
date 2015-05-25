@@ -1,6 +1,6 @@
 <#
 File location:
-C:\Users\dkoldunov\Documents\WindowsPowerShell
+cp ./Profile.ps1 C:\Users\dkoldunov\Documents\WindowsPowerShell
 #>
 
 New-PSDrive -Name Git -PSProvider FileSystem `
