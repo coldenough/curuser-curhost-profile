@@ -13,4 +13,7 @@ $nppAliasPath = "C:\Program Files (x86)\Notepad++\notepad++.exe"
 if (Test-Path $nppAliasPath) {
   Set-Alias -Name npp -Value $nppAliasPath -Description 'dkoldunov@ aliases' `
       -Option ReadOnly
-} #end of if 
+} #end of if
+
+#Modules
+Import-Module PSReadLine 
