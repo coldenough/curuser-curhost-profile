@@ -5,7 +5,7 @@ cp ./Profile.ps1 C:\Users\dkoldunov\Documents\WindowsPowerShell
 
 # PSDrives
 New-PSDrive -Name Git -PSProvider FileSystem `
-    -Root 'C:\Users\dkoldunov\Documents' `
+    -Root 'C:\Users\dkoldunov\Documents\GitHub' `
     -Description 'dkoldunov@ drive'
 
 # Aliases
