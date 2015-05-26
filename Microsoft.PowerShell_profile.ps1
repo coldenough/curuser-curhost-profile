@@ -1,7 +1,7 @@
 <#
 File location:
 cp ./Microsoft.PowerShell_profile.ps1 `
-    C:\Users\dkoldunov\Documents\Microsoft.PowerShell_profile.ps1
+    C:\Users\dkoldunov\Documents\WidowsPowerShell\Microsoft.PowerShell_profile.ps1
 #>
 
 # Reassign $HOME directory
