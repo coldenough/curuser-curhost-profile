@@ -1,7 +1,6 @@
 <#
-File location:
-cp ./Microsoft.PowerShell_profile.ps1 `
-    C:\Users\dkoldunov\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+Copy file to the following location:
+cp ./Microsoft.PowerShell_profile.ps1 $PROFILE.CurrentUserCurrentHost
 #>
 
 # Reassign $HOME directory
