@@ -8,9 +8,12 @@ Set-Variable -Name $HOME -Value 'C:\Users\dkoldunov' `
     -Description 'dkoldunov@ variable' -Option ReadOnly -Force
 
 # PSDrives
+$GitHubLocation = 'C:\Users\dkoldunov\Documents\GitHub'
+if (Test-Path $GitHubLocation) {
 New-PSDrive -Name Git -PSProvider FileSystem `
-    -Root 'C:\Users\dkoldunov\Documents\GitHub\' `
+    -Root $GitHubLocation `
     -Description 'dkoldunov@ drive'
+}
 
 # Aliases
 $nppAliasPath = "C:\Program Files (x86)\Notepad++\notepad++.exe"
