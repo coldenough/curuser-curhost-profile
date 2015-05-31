@@ -27,5 +27,7 @@ Import-Module PSReadLine
 
 # Posh Git
 # Load posh-git example profile
-. (Resolve-Path "$env:LOCALAPPDATA\GitHub\shell.ps1")
-. (Resolve-Path "$env:github_posh_git\profile.example.ps1")
+if (Get-Module posh-git) {
+  . (Resolve-Path "$env:LOCALAPPDATA\GitHub\shell.ps1")
+  . (Resolve-Path "$env:github_posh_git\profile.example.ps1")
+}
