@@ -1,6 +1,7 @@
 <#
+cd git:
 $dest = Split-Path $PROFILE.CurrentUserCurrentHost
-Copy file to the following location:
+# Copy file to the following location:
 cp ./Microsoft.PowerShell_profile.ps1 $dest
 #>
 
