@@ -6,11 +6,11 @@ cp ./Microsoft.PowerShell_profile.ps1 $dest
 #>
 
 # Reassign $HOME directory
-Set-Variable -Name $HOME -Value 'C:\Users\dkoldunov' `
-    -Description 'dkoldunov@ variable' -Option ReadOnly -Force
+#Set-Variable -Name $HOME -Value 'C:\Users\dkoldunov' `
+#    -Description 'dkoldunov@ variable' -Option ReadOnly -Force
 
 # PSDrives
-$GitHubLocation = 'C:\Users\dkoldunov\Documents\GitHub'
+$GitHubLocation = "$env:USERPROFILE" + "\Documents\GitHub"
 if (Test-Path $GitHubLocation) {
 New-PSDrive -Name Git -PSProvider FileSystem `
     -Root $GitHubLocation `
